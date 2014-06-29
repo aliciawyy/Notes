@@ -1,0 +1,69 @@
+
+Chapter 2 Mechanics of Futures Markets
+======================================
+
+Future and forward contracts are both agreement to buy or sell an asset at a future time for a certain price. Future contracts are traded on an **organized exchange**, and the contract terms are standardized by that exchange. By contrast, forward contracts are **private agreements** between two financial institutions or between a financial institution and one of its client.
+
+## Specification of a futures contract
+
+When developing a new contract, the exchange must specify in some detail he exact nature of agreement between the two parties. In particular, it must specify
+
+* **The asset** The financial assets in futures contracts are generally well defined and unambiguous.
+* **The contract size** The contract size specifies the amount of asset that has to be delivered under one contract.
+* **Delivery arrangements**
+* **Delivery months**
+* **Price quotes**
+* **Price Limits and Position Limits** A *limit move* is a move in either direction equal to the  daily price limit. Normally, trading ceases for the day once the contract is limit up or limit down. *Position limit* is the maximum number of contracts that a speculator may hold.
+
+-----------------------------
+
+## Convergence of Futures price to spot price
+
+As the delivery period for a futures contract is approached, the futures price converges to the spot price of the underlying asset.
+
+**Analysis.** If the futures price is above the spot price during the delivery period, then traders can sell the futures contract and buy the asset then make the delivery. This will certainly lead to a profit to the amount by which the future price exceeds the spot price. As traders exploit this arbitrage opportunity, the futures price will fall. Similar for the inverse case.
+
+-----------------------------
+
+## The operation of the margins
+
+One of the key roles of the exchange is to organize trading so that contract defaults are avoided.
+
+### Daily Settlement
+
+When someone buys a futures contract through his broker, the broker will require the investor to deposit funds in a *margin account*. This amount that must be deposited at the time the contract is entered into is known as the *initial margin*. At the end of each trading day, the margin account is adjusted to reflect the investor's gain or loss, this practice is referred to as *daily settlement* of *making to market*.
+
+A trade is first settled at the close of the day on which it takes place. It is then settled at the close of trading on each subsequent day.
+
+**Note.** The daily settlement is not merely an arrangement between broker and client. When there is a decrease in the futures price so that the margin account of an investor with a long position is reduced by $1800, the investor's broker has to pay the exchange $1800 and the exchange passes the money on to the broker of an investor with a short position. Similarly for the inverse.
+
+* ($>$ initial margin) The investor is entitled to withdraw any balance in the margin account in excess of the initial margin. 
+* ($<$ *maintenance margin* $<$ initial margin) If the balance of the margin account falls below the maintenance margin, the investor receives a margin call and is expected to top up the margin account to the initial margin by the end of the next day. The extra funds deposited are known as a *variatin margin*. If the investor does not provide the variation margin, the broker closes out the position.
+
+> *Closing out* a position means entering into the opposite trade to the original one. (P24) 
+
+This involves neutralizing the existing contract. For example, the NY investor who bought a July corn futures contract on March 5 can close out by sellling (i.e. shorting) one July corn futures on April 20. The investor's total gain or loss is determined by the change in the futures price between March 5 and the day when the contract is closed out.
+
+### The Clearing House and Clearing Margins
+
+A *clearing house* acts as an intermediary in futures transactions. It guarantees the performance of the parties to each transaction.
+
+
+
+-----------------------------
+
+## Exercises
+
+
+
+
+
+
+
+
+
+
+
+
+
+

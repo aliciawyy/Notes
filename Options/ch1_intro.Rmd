@@ -1,0 +1,230 @@
+Chapter 1 Introduction
+======================
+
+**Def.** A *derivative* can be defined as a financial instrument whose value depend on (or derived from) the values of others, more basic, underlying variables.
+
+Very oftern the variables underlying derivatives are the prices of traded assets. For example,
+
+* A stock option is a derivative whose value is dependent on the price of the stock.
+
+**Def.** A *derivative exchange* is a market where individuals trade standardized contracts that have been defined by exchange.
+
+The *over-the-counter market* is an important alternative to exchanges. Trades are done over the phone and are usually between two financial instituations or between a financial instituation and one of is client. Financial institutions often act as *market makers* for the more commonly traded instruments. This means that they are always prepared to quote both a bid price (a price at which they are prepared to buy) and an offer price (a price at which they are prepared to sell).
+
+* bid -> buy ; offer -> sell
+
+---
+
+## Forward contracts
+
+**Def.** A *forward contract* is an agreement to buy or sell an asset at a certain future time for a certain price. It can be contrasted with a *spot contract*, which is an agreement to buy or to sell today.
+
+A forward contract is traded in the over-the-counter market. One of the parties to a forward contract assumes a *long position* and agrees to buy the underlying asset on a certain specified future date for a certain specified price.
+
+* long -> buy ; short -> sell
+
+Forward contracts on foreign exchange are very popular. It can be used to hedge foreign currency risk.
+
+In general, the payoff from a long position in a forward contract on one unit of an asset is
+$$S_T - K$$
+where $K$ is the delivery price and $S_T$ is the spot price of the asset at maturity of the contract. This is because the holder of the contract is obligated to buy an asset worth $S_T$ for $K$. Similarly, the payoff from a short position in a forward contract on one unit of an asset is
+$$K - S_T$$
+
+Because it costs nothing to enter into a forward contract, the payoff from the contract is also the trader's total gain or loss from the contract.
+
+```{r, echo = FALSE, fig.height=5, fig.width = 10}
+par(mfrow= c(1,2))
+plot(0:2, -1:1, type = "l", main = "Payoff from forword contracts - long position", 
+     xlab = "S_T", ylab = "Payoff", col = "blue", lwd = 2, axes=FALSE)
+axis(1, pos = 0)
+axis(2, pos = 0)
+text(1, 0.1, "K", pos = 2, col = "blue")
+plot(0:2, 1:-1, type = "l", main = "Payoff from forword contracts - short position", 
+     xlab = "S_T", ylab = "Payoff", col = "blue", lwd = 2, axes=FALSE)
+axis(1, pos = 0)
+axis(2, pos = 0)
+text(1, 0.1, "K", col = "blue")
+```
+
+**Def.** A *future contract* is an agreement between two parties to buy or sell an asset at a certain time in the future for a certain price. Unlike forward contract, future contracts are normally traded on an exchange.
+
+---
+
+## Options
+
+Options are traded both on exchanges and over-the-counter market. There are two types of option:
+
+* A *call option* gives the holder the right to **buy** the underlying asset by a certain date for a certain price.
+* A *put option* -> **sell**
+
+The price in the contract is known as *exercise price* or *strike price*; the date in the contract is known as *expiration date* or *maturity*. *American options* can be exercised at any time up to the expiration date. *European options* can be exercised only on the expiration date itself. 
+
+**Comparison of options, future and forward contracts.** Options give the **right** to the holder to do something, but the holder does not have to exercise this right, this is what distinguishies options from forwards and futures, where the holder is **obligated** to buy or sell the underlying asset. Whereas it costs nothing to enter into a forward or future contract, there is a cost to acquire an option.
+
+There are four types of paticipants in options markets:
+
+1. Buyers of calls
+2. Sellers of calls
+3. Buyers of puts
+4. Sellers of puts
+
+Buyers are referred to as having *long positions*; sellers are referred to as having *short positions*. Selling an option is also known as *writing an option*.
+
+---
+
+## Different types of traders
+
+Three broad types of traders can be identified in a derivative market
+
+* **Hedgers** are in the position that they face risk associated with the price of an asset, so they use derivatives to reduce the risk that they face from potential future movements in a market variable.
+* **Speculators** use derivatives to bet on the future direction of a market variable.
+* **Arbitrageurs** take offsetting positions in two or more instruments to lock in a profit. They can take advantage of a discrepancy between prices in two different markets.
+
+### Hedgers
+
+* Hedging using forward contracts
+* Hedging using options
+
+If the investor will gain when the price decreases and lose when the price increases (imagine when you buy sth, you hope the price is lower), a *long* futures position will hedge the risk. If the investor will lose when the future price decreases and gain when the future price increases, a *short* futures position will help.
+
+**Comparison.** *Forward contracts* are designed to neutralize risk by fixing the price the the hedger will pay ot receive for the underlying asset. *Option contract*, by contrast, provide insurance, they offer a way for investors to protect themselves against adverse price movements in the future while still allowing them to benefit from favorable price movements.
+
+### Speculators
+
+* Speculation using futures (margin account)
+* Speculation using options
+
+**Comparison.** When a speculator uses futures, the potential loss as well as the potential gain is very large. When options are used, no matter how bad the thing is, the speculator's loss is limited to the amount paid for the options.
+
+### Arbitrageurs
+
+In practice very small arbitrage opportunities are observed in the prices that are quoted in most financial markets.
+
+----
+
+## Exercises
+
+1.1. A *long forward position*  is a situation that someone holds a forward contract to buy an underlying asset on a specified date in the future for a specified price.
+
+**Answer.** Correct.
+
+A *short forward position* -> sell
+
+1.3. *Entering into a long forward contract when the forward price is $50* means taking a forward contract of buying an underlying asset for $50 on a specified date in the future.
+
+*Taking a long position in a call option with a strike price of $50* means buying a call option for the price of $50 which will entitle the holder to buy an underlying asset on a specified date (European options) for a specified price in the future. (**Wrong. Strike price means the exercise price.**)
+
+**Answer.** The first is obligated. In the second case the trader has an option to buy the asset for $50.
+
+1.4. *Difference between selling a call option and buying a put option*
+
+*Selling a call option* gives the buyer to buy an asset at the stike price $K$ at maturity, suppose the spot price at the expiration date is $S_T$. The payoff for the seller is min($K - S_T, 0$). As in practice, the counterpart can choose not to exercise the right, so the payoff is always negative or zero.
+
+*Buying a put option* gives the buyer the right to buy an asset at the stike price $K$ at maturity, so the payoff for the buyer is max($S_T - K$, 0). The payoff is always positive or zero.
+
+**Answer.** Correct.
+
+1.5. (a) If the exchange rate at the end of the contract is 1.3900, he will gain (1.4000 - 1.3900) * 100000 = `r (1.4000 - 1.3900) * 100000` USD
+(b) If it is 1.4200, with the forward contract, he will lose (1.42-1.4) * 100000 = `r (1.4200 - 1.4000) * 100000`
+USD
+
+**Answer.** Correct.
+
+1.6. (a) If in the end the cotton is 48.2 cents per pound, he will gain (0.50 - 0.482) * 50000 = `r (0.50 - 0.482) * 50000` £ (b) For 51.30 cents per pound, he will lose (0.513 -0.5) * 50000 = `r (0.513 -0.5) * 50000` £
+
+**Answer.** Attention, short is to sell and long is to buy. 
+
+1.7. *Writing a put contract* enables the buyer to sell the asset for the price of 40$ in 3 months, so you agree to buy 100 shares of the stock at 40$ from the buyer if he chooses to exercise this option. (**Correct**)
+
+(a) You buy 100 shares of the stock at 41 USD now. If in 3 month, the stock price $S_T$ is below 40$, you will lose ($41 - S_T$) * 100 USD, if it is more than 40 USD, you will just lose 100 USD, so the payoff is min($S_T - 41$, -1) * 100 USD
+
+(b) You don't buy any stick now. If in 3 months, the stock price $S_T$ is below 40 USD, your payoff in three months will be max(0, $40 - S_T$) * 100 USD
+
+**Answer.** In return for the possible future losses, you receive the price of the option from the purchaser.
+
+1.8. *Difference between over-the-counter market and the exchange-traded market*
+
+**Answer.** The former trades over the telephone or the computer-linked network of financial institutions, fund managers, and corporate treasurzes where two participants can enter into any mutually acceptable contract. While the latter trades standardized contracts that have been defined by the exchange.
+
+1.9. *Two alternative investment strategies*
+
+a. To invest in the stock, we can buy 5800/29 = 200 shares, if the price in three months is $S_T$, the payoff will be ($S_T$ - 29) * 200 USD
+
+b. To buy the call option, we can buy 5800/2.9 = 2000 i.e. 10 contracts with a strike price of 30 USD, so the payoff will be max($S_T$ - 30, 0) * 2000 - 5800 = max($S_T$ - 32.9, -2.9) * 2000 USD
+
+**Answer.** Correct. If the share price does well the second strategy will give rise to greater gain. For example when $S_T$ = 40, you gain 2200 USD from the first strategy but 14200 USD form the second. However, if the share price goes down, you can lose all your investment. This example shows that options contain built-in leverage.
+
+1.10. You can buy 50 put option contract with the price for example 25 USD in 4 months. So if the price goes up to $S_T$, you can earn 5000 * ($S_T$ - 25) - cost of the option contract, while if the price goes down, you always have the right to sell the stock at 25 USD, so you loss won't depass the cost of the option contract.
+
+**Answer.** Correct. Buy the put option at the same price to hedge the risk.
+
+1.11. *Stock vs. stock option*
+
+**Answer.** When first issued, a stock provides funds for a company, but an exchange-traded stock option provides no funds for the company, it is a security sold by one investor to another, the company is not involved.
+
+1.13. The holder can make a profit when the price of the stock in the end of March is higher than $52.5
+```{r, echo= FALSE}
+par(mfrow = c(1,1))
+plot(c(40, 50, 52.5, 62.5), c(-2.5,-2.5, 0, 10), type = "l", main = "Payoff from the call option", 
+     xlab = "S_T", ylab = "Payoff", col = "blue", lwd = 2, axes=FALSE)
+axis(1, pos = 0)
+axis(2, pos = 40)
+text(52.5, -0.5, "52.5", pos = 4, col = "blue")
+text(56.5, 4, "Stock price", pos = 4, col = "blue")
+```
+
+**Answer.** Correct.
+
+1.23. *Index Currency Option Notes (ICONs)* 
+
+(Difficult. Need to understand short call payoff)
+
+Remember that the payoff of a short call option is $-$ max($S_T - K$, 0) = min($K-S_T$, 0), and the payoff of a long call option is max($S_T - K$, 0). The payoff of a long put option is max($K-S_T$, 0) and that of a short put option is min($S_T - K$, 0).
+
+**Note.** This is why there is the saying
+
+> Options and futures are zero-sum games.
+
+Because the gain to the party with short position is equal to the loss to the party with long position. Same for the inverse. In aggregate, the net gain to all parties is zero.
+
+The payoff in Japanese Yen is (minus the bond of 1000 USD)
+
+* $0$ when $S_T > 169$
+* $1000 - 169000/S_T$ when $84.5 <= S_T <= 169$
+* $-1000$ when $S_T < 84.5$
+
+Since when $S_T > 169$ we get 0 except the bond, it corresponds to a short call option with the strike price $1/169$.
+Its payoff is min(169 - $S_T$, 0)
+
+*A little bit confused. will return to it later. 29 June 2014*
+ 
+1.24.
+
+Suppose that the company first enters into a forward contract to buy 10 millions Japanese Yen with a strike price $K_1$, then the second forward contract has a strike price $K_2$ to sell the Japanese Yen.
+
+If on January 1, 2012, the spot price for 10 million Japanese Yen is $S_T$ USD, the payoff of the first forward contract is $S_T - K_1$, and that of the second forward contract is $K_2 - S_T$, then their payoff is in fact
+$$S_T - K_1 + K_2 - S_T = K_2 - K_1$$ 
+Thus the company will make a profit is $K_2 > K_1$
+
+**Answer.** Correct.
+
+1.25. *Arbitrage*
+
+a. We can buy a 180-day European call option to buy £1 for $1.42 at a cost of $0.02 and a 180-day forward contract to sell the pounds ar 1.4518, then for each pound, we will gain 1.4518 - 1.42 - 0.02 = `r 1.4518 - 1.42 - 0.02` USD
+
+b. We can buy a 90-day European put option to sell £1 for $1.49 at a cost of $0.02 and a 90-day forward contract to buy the pound at $1.4556, so for one pound, we will gain 1.49 - 0.02 - 1.4556 = `r 1.49 - 0.02 - 1.4556` USD
+
+**Answer.** This is just the limit cases, need to give the range for more general analysis!
+
+
+### Remaining exercises.
+14 - 20, 22, 23(confused)
+
+
+
+
+
+
+
+
+
