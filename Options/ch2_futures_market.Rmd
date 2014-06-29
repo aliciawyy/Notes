@@ -48,6 +48,28 @@ This involves neutralizing the existing contract. For example, the NY investor w
 
 A *clearing house* acts as an intermediary in futures transactions. It guarantees the performance of the parties to each transaction.
 
+-----------------------------
+
+## OTC Markets
+
+### Collateralization
+
+-----------------------------
+
+## Market Quotes
+
+Futures quotes are available from exchanges and from several online sources, for example [http://futures.tradingcharts.com/marketquotes/](http://futures.tradingcharts.com/marketquotes/).
+
+Take the example of gold [http://futures.tradingcharts.com/marketquotes/GC_.html](http://futures.tradingcharts.com/marketquotes/GC_.html)
+
+* The maturaty month of the contract is shown in the first column.
+* The firs three numbers of each row show the opening price, the highest price achieved in trading during the day, and the lowest price achieved during the day.
+* The sixth number labeled *set* is the *settlement price*. This is the price ussed for calculating daily gains and losses and margin requirements. The seventh number is the change in the settlement price from the previous day.
+* The column labeled *vol* shows the trading volume for the day and the column labeled *Op Int* is the open interest at the end of the previous day.
+    - The *trading volumn* is the number of contracts traded
+    - The *open interest* is the number of contracts outstanding
+    
+> Open interest is the total number of options and/or futures contracts that are not closed or delivered on a particular day. (ref. [investopedia](http://www.investopedia.com/terms/o/openinterest.asp))
 
 
 -----------------------------
