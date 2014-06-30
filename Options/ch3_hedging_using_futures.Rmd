@@ -3,7 +3,42 @@ title: "Hedging Strategies Using Futures"
 output: html_document
 ---
 
-## Basic Principles
-
 * A *short hedge* is a hedge that involves a short position in futures contract. A short hedge is appropriate when the hedger already owns an asset and expects to sell it at some time in the future.
 * A *long hedge* involves taking a long position in futures contract. A long hedge is appropriate when a company knows it will have to purchase a certain asset in the future and wants to lock in a price now.
+* *Cross hedge* is when the asset underlying the futures contract and the asset whose price is being hedged are different.
+
+The *basis* in a hedging situation is *Basis = Spot price - Futures price*
+
+The basis should be zero at the expiration of the futures contract. Prior to expiration, the basis could be positive or negative.
+
+--------------------
+
+## Cross Hedging
+
+*hedge ratio = size of the position taken in the futures contracts/size of the exposure*
+
+When cross hedging is used, setting the hedge ratio equal to 1.0 is not always optimal, the hedger should choose a value for the hedge ratio that minimizes the variance of the value of the hedged position.
+
+We can do a linear regression between the change of the spot price $\Delta S$ and the change in futures price $\Delta F$, it is to find the hedge ratio $h^\star$ so that we have the least squares like $\sum (\Delta S - h^\star \Delta F)^2$, we know from regression that
+$$
+h^\star = R \frac{\sigma_S}{\sigma_F}
+$$
+Where $R$ is the correlation between $\Delta S$ and $\Delta F$
+
+--------------------
+
+## Stock Index Futures
+
+**Def.** A *stock index* tracks changes in the value of a hypothetical portfolio of stocks. 
+
+The weight of a stock in the portfolio at a particular time equals the proportion of the hypothetical portfolio invested in the stock at that time.
+
+
+
+--------------------
+
+## Exercises
+
+
+
+

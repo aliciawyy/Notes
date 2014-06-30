@@ -1,0 +1,15 @@
+---
+title: "Interest Rates"
+output: html_document
+---
+
+Suppose that an amount $A$ is invested for $n$ years at an interest rate of $R$ per annum. If the rate is *compounded* once per annum, the terminal value of the investment is $$A(1+R)^n$$
+
+If the rate is compounded $m$ times per annum, the terminal value of the investment is $$A(1+ \dfrac{R}{m})^{mn}$$
+
+When $m = 1$, the rate is sometimes referred to as *equivalent annual interest rate*.
+
+When the compounding frequency $m \rightarrow \inf$, the limit is known as *continuous compounding*
+$$
+\lim_{m \rightarrow \inf} A(1+ \dfrac{R}{m})^{mn} = Ae^{Rn}
+$$
