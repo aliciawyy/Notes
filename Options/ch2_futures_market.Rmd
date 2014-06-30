@@ -71,12 +71,37 @@ Take the example of gold [http://futures.tradingcharts.com/marketquotes/GC_.html
     
 > Open interest is the total number of options and/or futures contracts that are not closed or delivered on a particular day. (ref. [investopedia](http://www.investopedia.com/terms/o/openinterest.asp))
 
+* **Patterns of Futures Prices** Futures prices can show a number of different patterns. The futures price of gold generally increase with the maturity of the contract.
+    - *Normal market* is the market where the futures price is an increasing function of the time to maturity.
+    - *Inverted market* is the market where the futures price decreases with the maturity of the futures contract.
+    - Sometimes that futures prices can show a mixture of normal and inverted markets.
+    
+-----------------------------
+## Types of Traders and Tyoes of Orders
+
+There are two main types of traders executing trades 
+
+* *Futures commission merchants* (FCMs) are following the orders of their clients and charge a commission for doing so.
+* *Locals* are trading on their own account.
+
+### Orders
+
+The simplest type of order placed with a broker is a *market order*. It is a request that a trade be carried out immediately at the best price available in the market.
+
+* A *limit order* specifies a particular price.
+* A *stop order* or *stop-loss*
+* A *stop-limit order*
+* A *market-if-touched (MIT) order* is also known as *board order*
+* A *discretionary order* or *market-not-held order*
+
 
 -----------------------------
 
 ## Exercises
 
+2.3. When the price increases (4000 - 3000)/5000 = `r (4000 - 3000)/5000`, taht is when the Silver price becomes $17.4 per ounce, it will lead to a margin call. If you do not meet it, (the futures will be closed out)->**the broker closes out your position**.
 
+**Answer.** Checked.
 
 
 
