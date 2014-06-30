@@ -13,3 +13,36 @@ When the compounding frequency $m \rightarrow \inf$, the limit is known as *cont
 $$
 \lim_{m \rightarrow \inf} A(1+ \dfrac{R}{m})^{mn} = Ae^{Rn}
 $$
+
+For most practical purposes, continuous compounding can be thought of as being quivalent to daily compounding.
+
+Suppose that $R_c$ is a rate of interest with continuous compounding and $R_m$ is the equivalent rate with compounding $m$ times per annum. So that we can convert one to the other with
+$$
+Ae^{R_c n} = A(1+ \dfrac{R_m}{m})^{mn} \Rightarrow e^{R_c} = (1+ \dfrac{R_m}{m})^m
+$$
+Thus
+$$
+R_c = m \ln(1+ \dfrac{R_m}{m}) \qquad R_m = m(e^{R_c/m} - 1)
+$$
+
+**Def.** The n-year *zero rate* is the rate of interes earned on an investment that starts today and lasts for n years. All the interest and principal is realized at the end of n years, there is no intermediate payments.
+
+## Bonds Pricing
+
+Most bounds pay coupons to the holder periodically. The bond's principal (which is also known as is *par value* or *face value*) is paid at the end of its life.
+
+*The theoretical price* of a bond = the present value of all the cash flows that will be received by the owner
+
+A *bond yield* is the single discount rate that, when applied to all cash flows, gives a bond price equal to its market price.
+
+The *par yield* for a certain bond maturity is the coupon rate that causes the bond price to equal its par value.
+
+
+
+
+
+
+
+
+
+
