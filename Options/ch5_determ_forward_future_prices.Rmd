@@ -61,9 +61,52 @@ A general result applicable to all long forward contract is $$f = (F_0 - K)e^{-r
 
 And the value of a short forward contract would be $$f = (K - F_0)e^{-rT} = K e^{-rT} - S_0$$
 
+### Forward prices and futures prices
 
+When a futures price changes, the gain or loss on a futures contract is calculated as the change in the futures price multiplied by the size of the position. The gain is realized almost **immediately** because futures contracts are settled daily.
 
+When a forward price changes, the gain or loss is the preent value of the change in the **present value** multiplied by the size of the position.
 
+---------------------------------
+
+## Futures prices of stock indices
+
+A stock index can usually be regarded as the price of an investment asset that pays dividends. The investment asset is the portfolio of stocks underlying the index, and the dividends that would be received by the holder of this portfolio.
+
+It is usually assumed that the dividends provide a known yield rather than a known cash income. If $q$ is the dividend yield rate, the futures price $F_0$ should be
+$$F_0 = S_0 e^{(r-q)T}$$
+
+### Index Arbitrage
+
+It is similar to futures arbitrage. Consider the two following cases
+
+* $F_0 > S_0 e^{(r-q)T}$
+* $F_0 < S_0 e^{(r-q)T}$
+
+---------------------------------
+
+## Forward and futures contracts on currencies
+
+From the perspective of a US investor, the underlying asset is one unit of the foreign currency. Suppose
+
+* $S_0$ the current spot price in USD of one unit of the foreign currency
+* $F_0$ the forward or futures price in USD of one unit of the foreign currency
+
+A foreign currency has the property that the holder of the currency can earn interest at the risk-free interest rate prevailing in the foreign country. We can define $r_f$ as the value of the foreign risk-free interest rate when money is invested for time $T$. The variable $r$ is the USD risk-free rate when money is invested for this period of time.
+
+The relationship between $F_0$ and $S_0$ is
+$$
+F_0 = S_0 e^{(r-r_f)T}
+$$
+A foreign currency can also be regarded as an investment asset paying a known yield.
+
+---------------------------------
+
+## Futures on commodities
+
+* *Income and storage costs*
+* *Comsumption commodities*
+* *Convenience yield* : The benefits from holding the physical asset. It reflects the market's expectations concerning the future availability of the commodity. The greater the possibility that shortages will occur, the higher the convenience yield.
 
 
 

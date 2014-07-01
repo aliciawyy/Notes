@@ -103,6 +103,34 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </ul>
 <p>A general result applicable to all long forward contract is <span class="math">\[f = (F_0 - K)e^{-rT} = S_0 - K e^{-rT}\]</span></p>
 <p>And the value of a short forward contract would be <span class="math">\[f = (K - F_0)e^{-rT} = K e^{-rT} - S_0\]</span></p>
+<div id="forward-prices-and-futures-prices" class="section level3">
+<h3>Forward prices and futures prices</h3>
+<p>When a futures price changes, the gain or loss on a futures contract is calculated as the change in the futures price multiplied by the size of the position. The gain is realized almost <strong>immediately</strong> because futures contracts are settled daily.</p>
+<p>When a forward price changes, the gain or loss is the preent value of the change in the <strong>present value</strong> multiplied by the size of the position.</p>
+<hr />
+</div>
+</div>
+<div id="futures-prices-of-stock-indices" class="section level2">
+<h2>Futures prices of stock indices</h2>
+<p>A stock index can usually be regarded as the price of an investment asset that pays dividends. The investment asset is the portfolio of stocks underlying the index, and the dividends that would be received by the holder of this portfolio.</p>
+<p>It is usually assumed that the dividends provide a known yield rather than a known cash income. If <span class="math">\(q\)</span> is the dividend yield rate, the futures price <span class="math">\(F_0\)</span> should be <span class="math">\[F_0 = S_0 e^{(r-q)T}\]</span></p>
+<div id="index-arbitrage" class="section level3">
+<h3>Index Arbitrage</h3>
+<p>It is similar to futures arbitrage. Consider the two following cases</p>
+<ul>
+<li><span class="math">\(F_0 &gt; S_0 e^{(r-q)T}\)</span></li>
+<li><span class="math">\(F_0 &lt; S_0 e^{(r-q)T}\)</span></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="forward-and-futures-contracts-on-currencies" class="section level2">
+<h2>Forward and futures contracts on currencies</h2>
+<p>From the perspective of a US investor, the underlying asset is one unit of the foreign currency. Suppose</p>
+<ul>
+<li><span class="math">\(S_0\)</span> the current spot price in USD of one unit of the foreign currency</li>
+<li><span class="math">\(F_0\)</span> the forward or futures price in USD of one unit of the foreign currency</li>
+</ul>
 </div>
 
 
