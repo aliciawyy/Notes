@@ -1,0 +1,6 @@
+Chapter 6 Interest Rate Futures
+===============================
+
+## Day count and quotation conventions
+
+The *day count* defines the way in which interest accrues over time.
