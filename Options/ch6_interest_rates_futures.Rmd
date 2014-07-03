@@ -3,4 +3,6 @@ Chapter 6 Interest Rate Futures
 
 ## Day count and quotation conventions
 
-The *day count* defines the way in which interest accrues over time.
+The *day count* defines the way in which interest accrues over time. Consider that we know the interest rate earned over some reference period, the interest earned over some other period can be calculated as
+
+(Number of days between dates)/(Number of days in reference period) * (Interest earned in reference period)
