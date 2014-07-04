@@ -1,0 +1,19 @@
+---
+title: "Chapter 7 Swaps"
+output: html_document
+---
+
+A *swap* is an over-the-counter agreement between two companies to exchange cash flows in the future. The agreement defines the days when the cash flows are to be paid and the way in which they are to be calculated.
+
+A forward contract is equivalent to the exchange of cash flows on just one future daye, swaps typicallly lead to cash flow exchange on several future dates.
+
+Two popular swaps
+
+* **Plain vanilla interest rate swaps**
+
+  In this swap, a company agrees to pay cash flows equal to interest at a predetermined fixed rate on a *notional* principal for a predetermined number of years. In return, it receives interest at a floating rate on the same notional principal for the same period of time.
+     
+     - Fixed-rate payer
+     - floating-rate payer
+  
+* **Fixed-for-fixed currency swaps**

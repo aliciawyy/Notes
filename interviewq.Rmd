@@ -1,0 +1,29 @@
+---
+title: "Quant Interview Questions"
+output: html_document
+---
+
+This file collects the quant interview questions collected on the Internet.
+
+## Mathematics
+
+- The number 1978 is such a number that if you add the first 2 sets of numbers, you'll will get the middle 2 sets of numbers. So in 1978, 19+78=97; so the question is to write a formula that can find numbers that satisfy these conditions. (*UBS 2010*)
+
+**Answer.** Suppose the number can be writen as $abcd$, all the four numbers are digits between $0$ and $9$. The condition is 
+$$
+(10a+b) + (10c+d) = 10(a+c) + (b+d) = 10b + c
+$$ 
+Thus
+$$
+10(a+c-b) + (b+d-c) = 0
+$$
+As $-9 <= b+d-c <= 18$, so $b+d -c =0$ or $10$.
+
+1. $b+d-c = 0$ then $a+c-b = 0 \Rightarrow a+d = 0 \Rightarrow$ $a=0, d=0$ and $b = c$
+2. $b+d-c = 10$ then $a+c-b = -1 \Rightarrow c=b-a-1, d = 9-a$ with $0<=a<=8$
+
+
+
+
+
+

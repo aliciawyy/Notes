@@ -6,3 +6,45 @@ Chapter 6 Interest Rate Futures
 The *day count* defines the way in which interest accrues over time. Consider that we know the interest rate earned over some reference period, the interest earned over some other period can be calculated as
 
 (Number of days between dates)/(Number of days in reference period) * (Interest earned in reference period)
+
+The day count conventions that are commonly used in the US are
+
+1. *Actual/actual* day count is used for Treasury bonds in the US.
+2. *30/360* day count is used for corporate and municipal bonds in the US.
+3. *Actual/360* day count is used for money market instruments in the US.
+
+### Price quotation of US Treasury Bills
+
+The prices of money market instruments are sometimes quoted using a *discount rate*.
+
+**Def.** The *discount rate* is the interest earned as a percentage of the final face value rahter than as a percentage of the initial price paid for the instrument.
+
+### Price Quotation of US Treasury Bonds
+
+Treasury bond prices in the US are quoted in dollars and 1/32 of a dollar.
+
+*Example.* A quote of 90-05 indicates that the quoted price of a bond with a face value of $100,000 is $90,156.25.
+
+Cash price paid by the purchaser of the bond = Quoted price + Accrued interest since last coupon date
+
+----------------------------
+
+## Treasury bond futures
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
