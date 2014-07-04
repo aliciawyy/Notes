@@ -1,0 +1,41 @@
+---
+title: "Chapter 9 Mechanics of Options Market"
+output: html_document
+---
+
+Review of the basic option notions.
+
+--------------------------------------
+
+Chapter 10 Properties of Stock Options
+======================================
+
+There are six factors affecting the price of a stock option
+
+1. The current stock price $S_0$
+2. The strike price $K$
+3. The time to expiration $T$
+4. The volatility of the stock price $\sigma$ : it is a measure of uncertainty.
+5. The risk-free interest rate $r$
+6. The dividends that are expected to be paid
+
+**Put-call parity**
+$$
+c + Ke^{-rT} = p + S_0
+$$
+
+--------------------------------------
+
+Chapter 11 Binomial Trees
+=========================
+
+The *risk-neutral* investors do not increase the expected return they require from an investment to compensate for increased risk.
+
+A risk-neutral world has two features
+
+- The expected return on a stock (or any other investment) is the risk-free rate.
+- The discount rate used for the expected payoff on an option (or any other instrument) is the risk-free rate.
+
+
+
+
