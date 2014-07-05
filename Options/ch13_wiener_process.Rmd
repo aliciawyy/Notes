@@ -1,0 +1,52 @@
+---
+title: "Chapter 13 Wiener Processes"
+output: html_document
+---
+
+Any variable whose value changes over time in an uncertain way is said to follow a *stochastic process*.
+
+A *Markov process* is a particular type of stochastic process where only the current value of a variable is relevant for predicting the future.
+
+The Markov property of stock prices is consistent with the weak form of market efficiency. This states that the present price of a stock impounds all the information contained in a record of past prices.
+
+When Markov processes are considered, the variances of the changes in successive time periods are additive.
+
+## Wiener Processes
+
+**Def.** The *Wiener process* is a particular type of Markov stochastic process with a mean change of $0$ and a variance rate of $1.0$ per year. It is also referred to as *Brownian motion*.
+
+**Prop 1.** The change $\Delta z$ during a small period of time $\Delta t$ is $$\Delta z = \epsilon \sqrt{\Delta t}$$
+Where $\epsilon$ has a standardized normal distribution $\phi(0,1)$
+
+**Prop 2.** The values of $\Delta z$ for any two different short intervals of time, $\Delta t$, are independent.
+
+The mean change per unit of time in a stochastic process is known as the *drift rate* and the variance per unit of time is known as the *variance rate*.
+
+In the basic Wiener process, $dz$ has a drift rate $= 0$, variance rate $= 1.0$. A *generalized Wiener process* for a variable $x$ can be defined in terms of $dz$ as
+$$
+dx = adt + bdz
+$$
+Where $a$ is the drit rate per unit of time and $b^2$ is the variance rate per unit of time. In a small time interval $\Delta t$, the change $\Delta x$ in the value of $x$ is given by
+$$
+\Delta x = a\Delta t + \epsilon\sqrt{\Delta t}
+$$
+The *Itô Process* is a generalized Wiener preocess in which the parameters $a$ and $b$ are functions of the value of the underlying variable $x$ and time $t$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
