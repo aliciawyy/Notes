@@ -1,0 +1,68 @@
+---
+title: "Black-Scholes-Merton Model"
+output: html_document
+---
+Suppose that a variable $x$ follows the *Itô process*
+$$
+dx = a(x,t)dt + b(x,t)dz
+$$
+Where $dz$ follows a Brownian motion and $a$ and $b$ are functions of $x$ and $t$. The *Itô's Lemma* is
+$$
+dG = (\dfrac{\partial G}{\partial t} + a\dfrac{\partial G}{\partial x} + \frac{1}{2} b^2 \dfrac{\partial^2 G}{\partial x^2})dt + b\frac{\partial G}{\partial x}dz
+$$
+The most widely used model of stock price behavior is
+$$
+dS = \mu S dt + \sigma S dz
+$$
+Where $\mu$ is the stock's expected rate of return and $\sigma$ is the volatility of the stock price. It is also known as *geometric Brownian motion*.
+
+If we take $G = \ln S$, then we obtain
+$$
+dG = (\mu - \dfrac{\sigma^2}{2})dt + \sigma dz
+$$
+
+Since with the continuously compounded rate $x$ between $0$ and $T$, we have $S_T = S_0e^{xT}$, so $x = \dfrac{1}{T}\ln\dfrac{S_T}{S_0}$. Thus
+
+* The stock price $S_T$ follows a lognormal distribution
+$$
+\ln S_T - \ln S_0 \sim N((\mu - \dfrac{\sigma^2}{2})T, \sigma^2 T)
+$$
+* The continuously compounded rate $x$ follows a normal distribution
+$$
+x \sim N(\mu - \dfrac{\sigma^2}{2}, \dfrac{\sigma^2}{T})
+$$
+
+-------------------------
+
+The principle of *risk-neutral valuation* is that
+
+> The price of of an option or other derivative when expressed in terms of the price of the underlying stock is independent of risk preferences. In the risk-neutral world, all securities have an expected return equal to risk-free interest rate.
+
+-------------------------
+
+The Black-Scholes-Merton equation is
+$$
+\dfrac{\partial f}{\partial t} + rS\dfrac{\partial f}{\partial S} + \frac{1}{2}\sigma^2S^2\dfrac{\partial^2 f}{\partial S^2} = rf
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

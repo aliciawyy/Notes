@@ -15,6 +15,11 @@ When Markov processes are considered, the variances of the changes in successive
 
 **Def.** The *Wiener process* is a particular type of Markov stochastic process with a mean change of $0$ and a variance rate of $1.0$ per year. It is also referred to as *Brownian motion*.
 
+Mathematically, for a sequence of random variables $W_t$, $t>0$, a Brownian motion requires
+$$
+W_{t+h} - W_h = \sqrt{h} N(0,1)
+$$
+
 **Prop 1.** The change $\Delta z$ during a small period of time $\Delta t$ is $$\Delta z = \epsilon \sqrt{\Delta t}$$
 Where $\epsilon$ has a standardized normal distribution $\phi(0,1)$
 
@@ -31,6 +36,12 @@ $$
 \Delta x = a\Delta t + \epsilon\sqrt{\Delta t}
 $$
 The *Itô Process* is a generalized Wiener preocess in which the parameters $a$ and $b$ are functions of the value of the underlying variable $x$ and time $t$.
+
+------------
+
+## Itô's Lemma
+
+The price of a stock option is a function of the underlying stock's price and time. More generally, we can say that the price of any derivative is a function of the stochastic variables underlying the derivative and time.
 
 
 
