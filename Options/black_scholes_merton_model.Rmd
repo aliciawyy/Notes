@@ -44,8 +44,30 @@ The Black-Scholes-Merton equation is
 $$
 \dfrac{\partial f}{\partial t} + rS\dfrac{\partial f}{\partial S} + \frac{1}{2}\sigma^2S^2\dfrac{\partial^2 f}{\partial S^2} = rf
 $$
+The most famous solutions to it are
+$$ \begin{align}
+c &= S_0 N(d_1) - Ke^{-rT}N(d_2)\\
+p &= K e^{-rT}N(-d_2) - S_0 N(-d_1)
+\end{align} $$
+Where
+$$ \begin{align}
+d_1 &= \dfrac{\ln (S_0/K) + (r+\sigma^2/2)/T}{\sigma\sqrt{T}} \\
+d_2 &= \dfrac{\ln (S_0/K) + (r-\sigma^2/2)/T}{\sigma\sqrt{T}} = d_1 - \sigma\sqrt{T}
+\end{align} $$
+Note the put-call parity is
+$$
+c + K e^{-rT} = p + S_0
+$$
 
-
+* In the case of forward contract, it is
+$$
+c + K e^{-rT} = p + F_0 e^{-rT}
+$$
+* In the case of foreign currencies, it is 
+$$
+c + K e^{-rT} = p + S_0 e^{-r_f T}
+$$
+A foreign currency is analoguous to a stock paying a dividend yield $r_f$.
 
 
 
