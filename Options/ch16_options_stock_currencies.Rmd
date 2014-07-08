@@ -54,7 +54,11 @@ The put-call parity is
 $$
 c + K e^{-rT} = p + F_0 e^{-rT}
 $$
-It is analoguous with the non-divident paying stock equation, only $S_0$ is replaced by the discounted futures price $F_0 e^{-rT}$.
+It is analoguous with the non-divident paying stock equation, only $S_0$ is replaced by the discounted futures price $F_0 e^{-rT}$. The futures price behaves like a stock providing a dividend yield $q$ equal to $r$. Thus with
+$dF = \sigma F dz$, we have the differential equation for the forward contract
+$$
+\dfrac{\partial f}{\partial t} + \frac{1}{2}\sigma^2F^2\dfrac{\partial^2 f}{\partial F^2} = rf
+$$
 
 
 

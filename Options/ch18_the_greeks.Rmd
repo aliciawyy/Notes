@@ -1,0 +1,88 @@
+---
+title: "Chapter 18 The Greeks"
+output: html_document
+---
+
+Each Greek letter measures a different dimension to the risk in an option position and the aim of a trader is to manage the Greeks so that all risks are acceptable.
+
+The following strategies do not work so well
+
+* *naked position*: do nothing
+* *covered position*: buy the stock at the price $S_0$
+* *stop-loss strategy*: hold a naked position whenever the stock price is less than $K$ and a covered position whenever the stock price is greater than $K$ 
+
+## Delta
+
+The *delta* ($\Delta$) of an option is defined as the rate of change of the oprion price with respect to the price of the underlying asset. In general
+$$
+\Delta = \dfrac{\partial c}{\partial S}
+$$
+The delta of the stock position offsets the delta of the option position. A position with a delta of zero is referred to as *delta neutral*.
+
+It is important to realize that, since the delta of an option does not remain constant, the trader's position remains delta hedged(or delta neutral) for only a relatively short period of time. The hedge has to be adjusted  periodically. This is known as *rebalancing*. There are different strategies to maintain the hedge
+
+* dynamic hedging
+* static hedging
+* hedge-and-forget
+
+The Black-Scholes-Merton equation can be viewed as an valuation of option be setting up a delta-neutral position and the return on the position should be the risk-free interest rate instantaneously.
+
+For a European stock option,
+$$
+\Delta(call) = N(d_1) \qquad \Delta(put) = N(d_1) - 1
+$$
+
+The delta of a portfolio of options or other derivatives dependent on a single asset whose price is $S$ is
+$$
+\dfrac{\partial \Pi}{\partial S}
+$$
+where $\Pi$ is the value of the portfolio.
+
+## Theta
+
+The theta ($\Theta$) of a portfolio of options is the rate of the change of the value of the portfolio with respect to the passage of time with all else remaining the same. (also referred to as *time decay*)
+
+For a European stock option,
+$$
+\Theta(call) = -\dfrac{S_0 N'(d_1) \sigma}{2\sqrt{T}} - rKe^{-rT}N(d_2)
+\qquad
+\Theta(put) = -\dfrac{S_0 N'(d_1) \sigma}{2\sqrt{T}} + rKe^{-rT}N(-d_2)
+$$
+where
+$$
+N'(x) = \dfrac{1}{\sqrt{2\pi}}e^{-x^2/2}
+$$
+
+Theta is usually negative for an option.
+
+## Gamma
+
+The *gamma* ($\Gamma$) of a portfolio of options on an underlying asset is the rate of change of the portfolio's delya with respect to the price of the underlying asset. It is
+$$
+\Gamma = \dfrac{\partial^2 \Pi}{\partial S^2}
+$$
+
+* If gamma is small, delta changes slowly, and adjustments to keep a portfolio delta neutral need to be made only relatively infrequently.
+* if gamma is highly negative or highly positive, delta is very sensitive to the price of the underlying asset. It is then quite risky to leave a delya neutral portfolio unchanged for any length of time.
+
+For a delta-neutral portfolio, if terms of order higher than $\Delta t$ are ignored,
+$$
+\Delta \Pi = \Theta \Delta t + \frac{1}{2}\Gamma \Delta S^2
+$$
+
+### Make a portfolio gamma neutral
+
+A position in the underlying asset has zero gamma and cannot be used to change the gamma of a portfolio. What is required is a position in an instrument such as an option that is not linearly dependent on the underlying asset.
+
+
+
+
+
+
+
+
+
+
+
+
+
