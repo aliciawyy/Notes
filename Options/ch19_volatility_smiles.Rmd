@@ -1,0 +1,42 @@
+---
+title: "Chapter 19 Volatility Smiles"
+output: html_document
+---
+
+The *implied volatility* is the volatility that makes the Black-Scholes-Merton price of an option equal to its market price. It is calculated using an iterative method.
+
+A plot of the implied volatility of an option with a certain life as a function of its strike price is known as a *volatility smile*.
+
+
+Chapter 21 Value at Risk
+========================
+
+When using the value-at-risk measure, an analyst is interested in making a statement of the following form
+
+> I am X percent certain there will be a loss of more than V dollars in th the next N days.
+
+* X: confidence level
+* V: the VaR of the portfolio
+* N: the time horizon(N days). An usual assumption is : $N$-day VaR = 1-day VaR $\times \sqrt{N}$
+
+There are two main approaches to calculate it
+
+* Historical simulation
+* Model building
+
+**Def.** *Daily volatility* $\sigma_{day} =\sigma_{year}/\sqrt{252}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

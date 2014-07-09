@@ -36,7 +36,9 @@ $$
 
 The principle of *risk-neutral valuation* is that
 
-> The price of of an option or other derivative when expressed in terms of the price of the underlying stock is independent of risk preferences. In the risk-neutral world, all securities have an expected return equal to risk-free interest rate.
+> The price of of an option or other derivative when expressed in terms of the price of the underlying stock is independent of risk preferences. 
+
+In the risk-neutral world, all securities have an expected return equal to risk-free interest rate, so we can value payoffs from the derivative by calculating their expected values and discounting at the risk-free interest rate.
 
 -------------------------
 

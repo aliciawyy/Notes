@@ -74,7 +74,59 @@ $$
 
 A position in the underlying asset has zero gamma and cannot be used to change the gamma of a portfolio. What is required is a position in an instrument such as an option that is not linearly dependent on the underlying asset.
 
+* Delta neutrality provides protection against relatively small stock moves between rebalancing.
+* Gamma neutrality provides protection against larger movements in this stock price between hedge rebalancing.
 
+For a European stock call or put option,
+$$
+\Gamma = \dfrac{N'(d_1)}{S_0 \sigma \sqrt{T}}
+$$
+
+## Relationship between delta, theta and gamma
+
+As the value of the portfolio $\Pi$ should satisfy the Black-Scholes-Merton equation
+$$
+\dfrac{\partial \Pi}{\partial t} + rS\dfrac{\partial \Pi}{\partial S} + \frac{1}{2}\sigma^2S^2\dfrac{\partial^2 \Pi}{\partial S^2} = r\Pi
+$$
+and
+$$
+\Theta = \dfrac{\partial \Pi}{\partial t} \qquad
+\Delta = \dfrac{\partial \Pi}{\partial S} \qquad
+\Gamma = \dfrac{\partial^2 \Pi}{\partial S^2}
+$$
+Then
+$$
+\Theta + rS\Delta + \frac{1}{2}\sigma^2S^2 \Gamma = r\Pi
+$$
+For a delta neutral portfolio, $\Delta = 0$, then
+$$
+\Theta + \frac{1}{2}\sigma^2S^2 \Gamma = r\Pi
+$$
+
+## Vega
+
+The *vega* ($\mathcal{V}$) of a portfolio of derivatives is the rate of change of the value of the portfolio with respect to the volatility of the underlying asset.
+$$
+\mathcal{V} = \dfrac{\partial \Pi}{\partial \sigma}
+$$
+For a European call or put option on a non-dividend-paying stock, vega is
+$$
+\mathcal{V} = S_0 \sqrt{T} N'(d_1)
+$$
+Vega neutrality protects against the variable $\sigma$
+
+## Rho
+
+The *rho* of a portfolio of options is the rate of change of the value of the portfolio with respect to the interest rate
+$$
+rho = \dfrac{\partial \Pi}{\partial r}
+$$
+For a European stock option
+$$
+rho(call) = KTe^{-rT}N(d_2)
+\qquad
+rho(put) = -KTe^{-rT}N(-d_2)
+$$
 
 
 
