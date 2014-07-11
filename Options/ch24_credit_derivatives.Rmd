@@ -1,0 +1,27 @@
+---
+title: "Chapter 24 Credit Derivatives"
+output: html_document
+---
+
+*Credit derivatives* are contracts where the payoff depends on the credit worthiness of one or more companies or countries. Credit derivatives can be categoriezed as
+
+* Single-name : The most popular type is a *credit default swap*, it is a contract that provides insurance against the risk of a default by a particular company.
+    - The company is known as a *reference entity*.
+    - A default by the company is known as a *credit event*.
+    - The total amount paid per year, as a percent of the notional principal to buy protection is known as the *CDS spread*.
+* Multi-name : The most popular type is a *collateralized debt obligation*. In this, a portfolio of debt instruments is specified and a complex structure is created where the cash flows from the portfolio are channelled to different categories of investors.
+
+## Credit Default Swap (CDS)
+
+
+
+
+
+
+
+
+
+
+
+
+

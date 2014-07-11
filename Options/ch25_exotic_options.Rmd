@@ -1,0 +1,40 @@
+---
+title: "Chapter 25 Exotic Options"
+output: html_document
+---
+
+A *vanilla option* is a normal call or put option that has standardized terms and no special or unusual features, for example the European and American put and call options.
+
+A *package* is a portfolio consisting of standard European calls, standard European puts, forward contracts, cash and the underlying asset itself.
+
+Suppose the asset provides a yield ar rate $q$, note that
+
+* For an option on a stock index, $q =$ the dividend yield on the index.
+* For an option on a currency, $q =$ the foreign risk-free rate
+* For an option on a futures contract, $q =$ the domestic risk-free rate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
