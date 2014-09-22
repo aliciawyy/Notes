@@ -3,13 +3,20 @@ title: "Intruments vanille à taux flottant"
 output: html_document
 ---
 
-- Titres distribuant des coupons fixes
-- Instruments distribuant aux instants $t=1,2,...,N$ des intérêts qui sont fonction de la valeur $I(t)$ d'un indice de référence.
+- Titres distribuant des coupons fixes (traités par les méthodes actuarielles classiques)
+- Instruments distribuant aux instants $t=1,2,...,N$ des intérêts qui sont fonction de la valeur $I(t)$ d'un indice de référence. On distingue deux catégories d'instruments à taux flottant
 
-On distingue deux catégories d'instruments à taux flottant
+    1. Actifs à taux flottants : des actifs classiques (bons, obligations...) s'ils distribuent un coupon flotant (*Floating Rate Notes* ou *FRN*). Selon les règles pour le calcul du coupon, on distingue
+        - Taux variable
+        - Taux révisible
 
-1. Des actifs classiques (bons, obligations...) si ce n'est qu'ils distribuent un coupon flotant (*Floating Rate Notes*).
+    2. Swap de taux : une position comprenant deux composantes de signe opposé, un instrument à taux fixe d'une part et un instrument à taux flottant d'autre part
     
+--------
+
+## Actifs à taux flottant
+   
+   
    Déf. Un **actif à taux flottant** est un instrument qui distribue des coupons calculés sur la base d'un taux nominal révisé en fonction de l'évolution des taux de marché. 
    
    Le **taux nominal**, donc le **coupon**, est en fonction d'une référence monétaire ou obligatoire I. Si $C_n$ désigne le n-ième coupon, on a $C_n = (\alpha I_n + m)D_n$ pour $n = 1,2,...,N$, où
@@ -25,7 +32,7 @@ On distingue deux catégories d'instruments à taux flottant
    $$
    $V(r,k) = 1$ si et seulement si $r = k$.
 
-## Les actifs à taux flottants
+## 
 
 **Typologie des actifs à taux flottant et principales références**
 
@@ -33,7 +40,7 @@ On distingue deux catégories d'instruments à taux flottant
 - Principales références
 - Instruments à taux flottant avec un plancher ou un plafond
 
-2. Swap de taux : une position comprenant deux composantes de signe opposé, un instrument à taux fixe d'une part et un instrument à taux flottant d'autre part
+
 
 ### Principales Références
 
