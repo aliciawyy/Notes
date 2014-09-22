@@ -1,0 +1,17 @@
+---
+title: "Inheritance for reuse"
+output: html_document
+---
+
+C++ defines the creation order as follows: (Destruction is in reverse order)
+
+1. If the class has a base class, **the default constructor of the base class** is executed.
+2. **Non-static data members** of the class are constructed in the order in which they were declared. 
+3. THe body of **the class's constructor** is executed.
+
+Note that the destructors are all `virtual`. If not, it can become a problem when a child object is accessed as a pointer to a parent and deleted. For example,
+```
+Parent* ptr = new Child();
+delete ptr;
+```
+The above code will construct the `Child` object in the creation order explained, but it will only call the destructor of `Parent` is the destructor of the class `Parent` is not declared `virtual`.

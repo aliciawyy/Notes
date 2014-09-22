@@ -13,6 +13,9 @@ Suppose the asset provides a yield ar rate $q$, note that
 * For an option on a currency, $q =$ the foreign risk-free rate
 * For an option on a futures contract, $q =$ the domestic risk-free rate.
 
+### Gap Option
+
+A gap option is a European call option that pays off $S_T - K_1$ when $S_T > K_2$. ($K_1 \neq K_2$)
 
 
 

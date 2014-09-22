@@ -1,0 +1,103 @@
+---
+title: "Intruments vanille à taux flottant"
+output: html_document
+---
+
+- Titres distribuant des coupons fixes
+- Instruments distribuant aux instants $t=1,2,...,N$ des intérêts qui sont fonction de la valeur $I(t)$ d'un indice de référence.
+
+On distingue deux catégories d'instruments à taux flottant
+
+1. Des actifs classiques (bons, obligations...) si ce n'est qu'ils distribuent un coupon flotant (*Floating Rate Notes*).
+    
+   Déf. Un **actif à taux flottant** est un instrument qui distribue des coupons calculés sur la base d'un taux nominal révisé en fonction de l'évolution des taux de marché. 
+   
+   Le **taux nominal**, donc le **coupon**, est en fonction d'une référence monétaire ou obligatoire I. Si $C_n$ désigne le n-ième coupon, on a $C_n = (\alpha I_n + m)D_n$ pour $n = 1,2,...,N$, où
+   
++ $I_n$ indice ou référence monétaire.
++ $\alpha$ marge multiplicative déterminée à l'émission (en $t=0$) et le plus souvent égale à $1$.
++ $m$ marge additive déterminée à l'émission, qui dépend notamment du risque de crédit affectant l'actif *à la date de son émission*.
++ $D_n$ durée de la période $n$ à la fraction de l'année.
+   
+   La valeur $V(r,k)$ d'un titre dont la valeur nominale est $1$, le taux nominal est $k$ et le taux de rentabilité $r$ fluctue selon la condition du marché
+   $$
+   V(r,k) = \sum_{1}^N \dfrac{k}{(1+r)^i} + \dfrac{1}{(1+r)^N}
+   $$
+   $V(r,k) = 1$ si et seulement si $r = k$.
+
+## Les actifs à taux flottants
+
+**Typologie des actifs à taux flottant et principales références**
+
+- Instruments à taux révisibles et à taux variables
+- Principales références
+- Instruments à taux flottant avec un plancher ou un plafond
+
+2. Swap de taux : une position comprenant deux composantes de signe opposé, un instrument à taux fixe d'une part et un instrument à taux flottant d'autre part
+
+### Principales Références
+
+1. Les références monétaires
+   - *EUROBOR* : Euro InterBank Offered Rate
+     
+     Egale à la moyenne arithmétique des taux offerts sur le marché inter-bancaire par un panel de grandes banques de la zone Euro, pendant la journée.
+     
+   - *LIBOR* : London InterBank Offered Rate
+
+     Refléter le taux moyen auquel un échantillon de grandes banques établies à Londres prêtent "en blanc" (c’est-à-dire sans que le prêt soit gagé par des titres) à d'autres grandes banques
+
+2. Les références de taux monétaires Euro
+   - *EONIA* : Euro Overnight Interest Average, moyenne des taux à 24 heures pratiqués sur le marché interbancaire pour des opérations en euro.
+   - *OIS* : Overnight Index Swap
+   
+3. Références obligatoires
+
+   Sur le marché français les principaux indices obligatoires utilisés pour référencer des taux flottants sont les *TEC* (Taux à échéance constante) ou des indices calculés à partir de cette référence.
+   
+Parmi les indices, il faut distinguer ce qui réprésentent
+
+- une situation instantatnée ou quasi-instantanée (EURIBOR, LIBOR)
+- une situation moyenne sur une période plus longue précédant la date de calcul de l'indice (indice OIS, E3C = Euribor-3 mois capitalisé, moyennes annuelles de TEC...)
+ 
+
+
+### Plain vanilla
+
+plain vanilla $\neq$ exotic instrument
+
+> For example, a plain vanilla option is the standard type of option, one with a simple expiration date and strike price and no additional features. With an exotic option, such as a knock-in option, an additional contingency is added so that the option only becomes active once the underlying stock hits a set price point.
+
+Une **obligation** est un titre devant distribuer une séquence de $N$ coupons, $\{C_n\}_{n=1,...,N}$ et le nominal avec le dernier coupon $C_N$.
+
+---
+ 
+## Les swaps vanille
+
+Deux catégories principales
+
+- Swaps de taux
+  
+  Un swap de taux est un échange d'intérêts entre deux contreparties. Dans un swap de taux classique, les intérêts correpsondent à deux dettes de même montant, libellées dans la même devise, l'une à taux fixe *TF* et l'autre à taux variable ou révisible *TV(t)*
+   
+- Swaps de devises
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+
+
+
+

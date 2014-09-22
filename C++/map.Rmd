@@ -1,0 +1,8 @@
+---
+title: "map"
+output: html_document
+---
+
+The `std::map` store key/value pairs where *insertion, lookup and deletion* are all based on the key and the value is just along the ride.
+
+The `map` keeps elements in sorted order, based on the keys, so that *insertion, deletion and lookup* all take **logarithmic time**. It is usually implemented as some form of balanced tree.

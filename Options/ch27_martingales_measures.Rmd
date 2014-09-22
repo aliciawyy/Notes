@@ -1,0 +1,10 @@
+---
+title: "Chapter 27 Martingales and Measures"
+output: html_document
+---
+
+The excess return over the risk-free interest rate earned by any derivative in a short period of time is linearly related to the *market price of risk* of the underlying stochastic variables.
+
+A *martingale* is a zero-drift stochastic process.
+
+A *measure* is the unit in which we value security prices. The *equivalent martingale measure unit* states that if we use the price of a traded security as the unit of measurement then there is some market price of risk for which all security prices follow martingales.
