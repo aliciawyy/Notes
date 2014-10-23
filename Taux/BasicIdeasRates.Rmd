@@ -1,0 +1,7 @@
+# Basic Concepts of Interest Rates
+(Ref. Interest Rate Models : Theory and practice)
+
+There are different types of interest rates, and a first distinction can be made between _interbank rates_ and _government rates_.
+
+* Government rates are usually deduced by bonds issued by governments.
+* By interbank rates we denote rates at which deposits are exchanged between banks. (ex. LIBOR)

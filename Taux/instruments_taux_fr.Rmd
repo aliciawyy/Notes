@@ -1,6 +1,6 @@
 ---
 title: "Intruments vanille à taux flottant"
-output: html_document
+output: pdf_document
 ---
 
 - Titres distribuant des coupons fixes (traités par les méthodes actuarielles classiques)
